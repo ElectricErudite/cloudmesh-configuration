@@ -14,8 +14,8 @@ import pytest
 import tempfile
 from cloudmesh.configuration.Config import Config
 from cloudmesh.common.util import path_expand, writefile, readfile
-#from cloudmesh.security.encrypt import KeyHandler, CmsEncryptor
-from cloudmesh.configuration.security.encrypt import KeyHandler, CmsEncryptor
+from cloudmesh.configuration.security.KeyHandler import Keyhandler
+from cloudmesh.configuration.security.CmsEncryptor import CmsEncryptor
 from shutil import copy2
 
 @pytest.mark.incremental
